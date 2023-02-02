@@ -1,0 +1,47 @@
+#Menu{
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px gray solid;
+    width: 20%;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    color: #232D7B;
+    background-color: #FFF159;
+    font-size: 1.2rem;
+}
+
+fieldset{
+    width: 200px;
+}
+
+.ctn{
+    margin-top: 10px;
+}
+
+input{
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+    width: 80%;
+    background-color: rgb(235, 235, 235);
+}
+
+@media only screen and (max-width: 600px){
+    #Menu{
+        width: 90%;
+    }
+
+    fieldset{
+        width: 300px;
+    }
+
+    input[type=radio] {
+        border: 0px;
+        width: 30px;
+        height: 30px;
+    }
+}

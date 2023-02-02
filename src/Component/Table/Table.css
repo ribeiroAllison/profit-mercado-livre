@@ -1,0 +1,30 @@
+#table{
+    color: #232D7B;
+    background-color: #FFF159;
+    border: 2px gray solid;
+    width: 20%;
+    padding: 5px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    width: 95%;
+    height: 95%;
+}
+
+#results{
+    background-color: rgb(235, 235, 235);
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    #table{
+        width: 90%;
+    }
+}
