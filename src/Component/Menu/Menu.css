@@ -14,11 +14,18 @@
 }
 
 fieldset{
+    
     width: 200px;
 }
 
 .ctn{
     margin-top: 10px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 15px;
+    height: 15px;
 }
 
 input{
