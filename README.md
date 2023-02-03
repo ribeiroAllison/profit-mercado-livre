@@ -30,11 +30,11 @@ The program receives `five params` and returns an info table with all the `detai
 - Percentage of profit over the cost
 
 ## Project Goal
-I build this to study React.js in its legacy form, using classes instead of functions. I have never touched React before this project, so it was a way to solidify what I was learning in Codecademy's full-stack engineer course.
+I build this to `study React.js in its legacy form`, using classes instead of functions. `I have never touched React before this project`, so it was a way to solidify what I was learning in Codecademy's full-stack engineer course.
 
-This will also be *used by e-commerce companies* to calculate profit and product viability *faster and more conveniently* than a normal excel spreadsheet.
+This will also be `used by e-commerce companies` to calculate profit and product viability `faster and more conveniently` than a normal excel spreadsheet.
 
-I also plan on adapting this project to React Native to make it an app.
+I also plan on adapting this project to React Native to `make it an app`.
 
 ## Technologies used:
 
