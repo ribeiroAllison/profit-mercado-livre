@@ -1,3 +1,5 @@
+// This component will handle all status changes to App component
+
 import './Menu.css'
 import React from "react";
 
@@ -13,6 +15,7 @@ class Menu extends React.Component{
         this.handleChangeImposto = this.handleChangeImposto.bind(this);
     }
 
+    // Event handlers methods:
     handleChangePeso(e){
         let peso = Number(e.target.value);
         this.props.changePeso(peso);
@@ -30,7 +33,9 @@ class Menu extends React.Component{
 
     handleChangeImposto(e){
         let stringImposto = e.target.value;
-        let imposto = Number(stringImposto.slice(0, -1)) / 100;
+        //user will make this input in percentage format (like 10%), 
+        //this line is to remove the % sign and dividing it to 100 so the result would have this format: 0.10:
+        let imposto = Number(stringImposto.slice(0, -1)) / 100; 
         this.props.changeImposto(imposto);
     }
 

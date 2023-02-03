@@ -11,8 +11,9 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      tipoAnuncio: 'normal',
-      peso: 0,
+      tipoAnuncio: 'normal', //can switch from normal or premium, each with a different commission rate
+      // Number inputs from user:
+      peso: 0, 
       precoVenda: 0,
       precoCusto: 0,
       imposto: 0
@@ -26,6 +27,7 @@ class App extends React.Component{
     this.changeImposto = this.changeImposto.bind(this);
   }
 
+  //change state methods:
   changeAnuncio(tipo) {
     this.setState({
       tipoAnuncio: tipo
@@ -62,7 +64,9 @@ class App extends React.Component{
         
         <Header />
         <main>
+          {/* Sending state change methods to Menu Component*/}
           <Menu changeAnuncio={this.changeAnuncio} changePeso={this.changePeso} changeVenda={this.changeVenda} changeCusto={this.changeCusto} changeImposto={this.changeImposto}/>
+          {/* Sending state values to Table Component */}
           <Table tipoAnuncio={this.state.tipoAnuncio} peso={this.state.peso} precoVenda={this.state.precoVenda} precoCusto={this.state.precoCusto} imposto={this.state.imposto}/>
         </main>
         
@@ -71,6 +75,7 @@ class App extends React.Component{
     )
   }
 }
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
