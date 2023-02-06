@@ -56,13 +56,13 @@ class Menu extends React.Component{
                 </fieldset>
                 <form id="inputs" class="ctn">
                     <legend>Preço de Venda</legend>
-                    <input onChange={this.handleChangeVenda} type="number"/>
+                    <input onChange={this.handleChangeVenda} type="number" placeholder="Digite o valor de venda"/>
                     <legend>Preço de Custo</legend>
-                    <input onChange={this.handleChangeCusto} type="number"/>
+                    <input onChange={this.handleChangeCusto} type="number" placeholder='Custo do produto'/>
                     <legend>Imposto de Venda</legend>
-                    <input onChange={this.handleChangeImposto} type="text" placeholder='10%'/>
+                    <input onChange={this.handleChangeImposto} type="text" placeholder='Imposto nesse formato: 10%'/>
                     <legend>Peso do Produto (em Kg)</legend>
-                    <input onChange={this.handleChangePeso} type="number"/>
+                    <input onChange={this.handleChangePeso} type="number" placeholder='Peso do produto em quilos'/>
                     
                 </form>
                 
