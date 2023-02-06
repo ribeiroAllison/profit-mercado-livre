@@ -15,7 +15,7 @@
 
 fieldset{
     
-    width: 200px;
+    width: 80%;
 }
 
 .ctn{
@@ -37,18 +37,28 @@ input{
     background-color: rgb(235, 235, 235);
 }
 
+#inputs input{
+    width: 95%;
+    font-size: 1rem;
+}
+
 @media only screen and (max-width: 600px){
     #Menu{
         width: 90%;
     }
 
-    fieldset{
-        width: 300px;
-    }
+
 
     input[type=radio] {
         border: 0px;
         width: 30px;
         height: 30px;
     }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px){
+    #Menu{
+        width: 45%;
+    }
+
 }

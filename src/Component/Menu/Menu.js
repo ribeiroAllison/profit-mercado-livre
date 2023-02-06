@@ -60,7 +60,7 @@ class Menu extends React.Component{
                     <legend>Preço de Custo</legend>
                     <input onChange={this.handleChangeCusto} type="number" placeholder='Custo do produto'/>
                     <legend>Imposto de Venda</legend>
-                    <input onChange={this.handleChangeImposto} type="text" placeholder='Imposto nesse formato: 10%'/>
+                    <input onChange={this.handleChangeImposto} type="text" placeholder='Digite nesse formato: 10%'/>
                     <legend>Peso do Produto (em Kg)</legend>
                     <input onChange={this.handleChangePeso} type="number" placeholder='Peso do produto em quilos'/>
                     
